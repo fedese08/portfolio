@@ -1,6 +1,6 @@
 const WORKS = [
     {
-        "title": "Rock Papper Scissors Game",
+        "title": "Rock Paper Scissors Game",
         "urlGit": "https://github.com/fedese08/rock-paper-scissors",
         "urlPage": "https://fedevs-rock-paper-scissors-game.netlify.app",
         "lang": ["JavaScript","HTML","CSS"]
