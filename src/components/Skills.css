@@ -1,0 +1,123 @@
+#skills {
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    flex-direction: column;
+    padding-bottom: 4em;
+}
+
+
+#skills h1 {
+    font-size: 2.6em;
+    color: #E7F6F2;
+    font-weight: 900;
+    margin-bottom: 2em;
+    margin-top: -.2em;
+}
+
+
+.skills-section-container-not-responsive {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    gap: 10em;
+    margin: 0 auto;
+}
+
+.skills-section-container-responsive {
+    display: none;
+}
+
+.skill-title-img {
+    padding-top: 3em;
+}
+
+.skill-img-container {
+    background-color: #395B64;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.skill-img-container img{
+    width: 300px;
+    padding-bottom: 5em;
+    padding-right: 2em;
+}
+
+.skills-container {
+    display: grid;
+    grid-auto-rows: 150px;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    padding-top: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #1F2323;
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.skill-info h2 {
+    color: #E7F6F2;
+    font-size: 1em;
+}
+
+.skill-info img {
+    width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        max-width: 750px;
+        padding: 0em 2em;
+        margin-bottom: 10em;
+    }
+
+    .skill-title h1 {
+        font-size: 2.6em;
+    }
+    
+    .skill-title-img {
+        margin-top: 4em;
+        padding: 0;
+        height: 6em;
+    }
+
+    .skills-section-container-responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-section-container-not-responsive {
+        display: none;
+    }
+
+
+    .skills-container {
+        display: grid;
+        grid-auto-rows: 150px;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+}

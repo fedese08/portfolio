@@ -1,0 +1,21 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.navbar-container h1 {
+    color: #E7F6F2;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-container h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar-container {
+        padding: 0 1em;
+    }
+}
